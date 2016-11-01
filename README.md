@@ -19,7 +19,8 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 - Responsive (working well on mobiles too).
 - Touch-enabled.
 - Thumbnail navigation.
-- Fast and lightweight.
+- Translation ready.
+- Fast and lightweight. (The JavaScript is only  8.32 KB)
 
 #### Open images and divs
 
