@@ -3,7 +3,7 @@ RESPONSIVE TOUCH-ENABLED JQUERY IMAGE LIGHTBOX - WORDPRESS PLUGIN
 
 - Author: Joe Szalai
 - Original idea and concept by: Wily from http://vilsoni.info/demo/?i=ilb
-- Version: 1.1
+- Version: 1.1.0
 - Plugin URL: https://github.com/JoeSz/exopite-lightbox35
 - Author URL: http://joe.szalai.org
 - License: GNU General Public License v3 or later
@@ -12,12 +12,13 @@ RESPONSIVE TOUCH-ENABLED JQUERY IMAGE LIGHTBOX - WORDPRESS PLUGIN
 DESCRIPTION
 -----------
 
-Responsive Touch-enabled jQuery Image Lightbox
+Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 
 - Open images and divs with lightbox effect.
 - Navigate through arrow keys, mouse wheel, click, tap or swipe.
 - Responsive (working well on mobiles too).
 - Touch-enabled.
+- Thumbnail navigation.
 - Fast and lightweight.
 
 #### Open images and divs
@@ -32,13 +33,14 @@ Responsive Touch-enabled jQuery Image Lightbox
 - Mouse wheel.
 - Click on the left or right side of the images.
 - Tap on the left or right side of the images.
+- Thumbnail navigation.
 
 #### Caption on the image
 
 Caption on the image, the program looking for the div inside in the link (A) tag with a class "lightbox35-lightbox-caption", if none, then looking for the image title attribute. With CSS you can customize the look and feel. You can use HTML inside div caption but because nested link are invalid, please place your link inside caption div like: [url="link" attribute="value"]name of the link[/url].
 
-DESCRIPTION
------------
+REQUIREMENTS
+------------
 
 Server
 
@@ -61,7 +63,7 @@ INSTALLATION
 CHANGELOG
 ---------
 
-= 1.0.0 =
+= 1.1.0 =
 * Initial release
 
 
