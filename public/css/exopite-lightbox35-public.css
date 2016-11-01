@@ -1,0 +1,210 @@
+#lightbox35 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .85);
+    z-index:998;
+    cursor:  url('cursor_magnifier_minus.cur'), pointer;
+}
+#lightbox35 .slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 34px 10px 75px 10px;
+}
+#lightbox35 .slide-frame {
+    position: relative;
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.2);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 5px 2px rgba(255,255,255,0.2);
+    z-index: 998;
+    display: inline-block;
+}
+/* Cursors */
+#lightbox35 .cursor_right {
+    cursor:  url('cursor_arrow_right.cur'), pointer;
+}
+#lightbox35 .cursor_left {
+    cursor:  url('cursor_arrow_left.cur'), pointer;
+}
+#lightbox35 .cursor_default {
+    cursor: default;
+}
+/* Slide position */
+#lightbox35 .position {
+    padding: 2px;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    color: #fff;
+    font-size: 0.7em;
+    line-height: 0.7em;
+}
+/* Caption */
+#lightbox35 .lightbox35-caption-style-1 {
+    padding: 10px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#lightbox35 .lightbox35-caption-style-2 {
+    background-color: white;
+    padding: 5px;
+}
+/* Close Button */
+#lightbox35 .close-thik:after {
+    content: '✖';
+    right: 4px;
+    top: 4px;
+    position: absolute;
+}
+#lightbox35 .hidden, #lightbox35 .lightbox35-lightbox-caption {
+    display: none;
+}
+#lightbox35 [class*='close-'] {
+    color: #fff;
+    background-color: red;
+    font: 13px/11px arial, sans-serif;
+    position: absolute;
+    right: -10px;
+    text-decoration: none;
+    top: -10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding:3px;
+    width: 23px;
+    height: 23px;
+    overflow: hidden;
+    -webkit-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.5);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,8f0222+44,6d0019+100;Brown+Red+3D */
+    background: #a90329; /* Old browsers */
+    background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+    cursor: pointer;
+}
+/* Thumbnails */
+#lightbox35 .thumbnails {
+    position: fixed;
+    left:50%;
+    bottom: 6px;
+    z-index: 999;
+    width: 3000%;
+}
+#lightbox35 .thumbnail {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 2px;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 2px #888;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    overflow: hidden;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0;
+}
+#lightbox35 .thumbnail.current {
+    opacity: 1;
+}
+/* Downloads */
+#lightbox35 .slide-controls {
+    position: relative;
+}
+#lightbox35 .control-row, .slide-controls {
+    z-index: 999;
+}
+#lightbox35 .lightbox35-open {
+    padding-right: 10px;
+}
+#lightbox35 .lightbox35-open i, #lightbox35 .lightbox35-download i {
+    padding-right: 4px;
+}
+.slide-controls span {
+    color: #ccc;
+    cursor: pointer;
+}
+#lightbox35 .slide-controls a, #lightbox35 .slide-controls a:hover {
+    color:#ccc;
+}
+#lightbox35 .control-row {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#lightbox35 .slide-controls {
+    display: inline-block;
+}
+/* non image elements */
+#lightbox35 .inner-div {
+    max-width: 1140px; /* Bootstrap default content width */
+    max-height: 90%;
+    display: inline-block;
+    padding:10px;
+    overflow: auto; /* scrollbar if need it */
+    float:left; /* make sure inner div and outer div has a same height */
+}
+#lightbox35 .thumbnail-div {
+    text-align: center;
+    padding-top: 14px;
+    background-color: #ccc;
+    color:#888;
+}
+.lightbox35-lightbox-caption {
+    display: none; /* Dont display on the page */
+}
+#lightbox35 .inner-div + div {
+        max-width: 1140px; /* Bootstrap default content width */
+}
+/* on the page */
+.lightbox35-lightbox {
+    display: inline-block;
+    position: relative;
+}
+.lightbox35-lightbox:hover {
+    cursor: pointer; /* Show user, div is clickable */
+}
+.lightbox35-lightbox .cover {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:99;
+}
+/* nav arrows */
+#lightbox35 .nav-left, #lightbox35 .nav-right {
+    position: fixed;
+    width: 50px;
+    z-index: 1000;
+    height: 50px;
+    font-size: 33px;
+    padding-left: 15px;
+    cursor: pointer;
+    bottom: 12px;
+    background-color: #000;
+    border: 1px solid #333;
+    color: #888;
+    line-height: 48px;
+}
+#lightbox35 .nav-left {
+    left: 10px;
+}
+#lightbox35 .nav-right {
+    right: 10px;
+}
