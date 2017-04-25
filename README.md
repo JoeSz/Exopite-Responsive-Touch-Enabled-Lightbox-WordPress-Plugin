@@ -40,13 +40,17 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 
 Caption on the image, the program looking for the div inside in the link (A) tag with a class "lightbox35-lightbox-caption", if none, then looking for the image title attribute. With CSS you can customize the look and feel. You can use HTML inside div caption but because nested link are invalid, please place your link inside caption div like: [url="link" attribute="value"]name of the link[/url].
 
+Deskop                     |  Mobile                |  Admin options
+:-------------------------:|:----------------------:|:-------------------------:
+![](screenshot-1.jpg)      |  ![](screenshot-2.jpg) |  ![](screenshot-3.jpg)
+
 REQUIREMENTS
 ------------
 
 Server
 
 * WordPress 4.0+ (May work with earlier versions too)
-* PHP 5+ (Required)
+* PHP 5.3+ (Required)
 * jQuery 1.9.1+
 
 Browsers
