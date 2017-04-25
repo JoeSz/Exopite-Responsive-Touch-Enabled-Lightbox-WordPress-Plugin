@@ -2,7 +2,7 @@ RESPONSIVE TOUCH-ENABLED JQUERY IMAGE LIGHTBOX - WORDPRESS PLUGIN
 =================================================================
 
 - Author: Joe Szalai
-- Original idea and concept by: Wily from http://vilsoni.info/demo/?i=ilb
+- Original idea and concept von Wily
 - Version: 1.1.0
 - Plugin URL: https://github.com/JoeSz/exopite-lightbox35
 - Author URL: http://joe.szalai.org
@@ -30,7 +30,7 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 
 #### Navigate through elements
 
-- Awrow keys.
+- Arrow keys.
 - Mouse wheel.
 - Click on the left or right side of the images.
 - Tap on the left or right side of the images.
