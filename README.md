@@ -42,7 +42,7 @@ Caption on the image, the program looking for the div inside in the link (A) tag
 
 Deskop                     |  Mobile                |  Admin options
 :-------------------------:|:----------------------:|:-------------------------:
-![](screenshot-1.jpg)      |  ![](screenshot-2.jpg) |  ![](screenshot-3.jpg)
+![](assets/screenshot-1.jpg)      |  ![](assets/screenshot-2.jpg) |  ![](assets/screenshot-3.jpg)
 
 REQUIREMENTS
 ------------
