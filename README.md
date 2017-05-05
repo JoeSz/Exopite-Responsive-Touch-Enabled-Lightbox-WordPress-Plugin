@@ -1,8 +1,8 @@
-RESPONSIVE TOUCH-ENABLED JQUERY IMAGE LIGHTBOX - WORDPRESS PLUGIN
-=================================================================
+# Responsive Touch-enabled Jquery Image Lightbox
+## Wordpress Plugin
 
 - Author: Joe Szalai
-- Original idea and concept von Wily
+- Original idea von Wily
 - Version: 1.1.0
 - Plugin URL: https://github.com/JoeSz/exopite-lightbox35
 - Author URL: http://joe.szalai.org
