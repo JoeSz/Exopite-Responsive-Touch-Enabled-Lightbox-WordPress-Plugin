@@ -65,6 +65,17 @@ INSTALLATION
 1. Upload "lightbox35" to the "/wp-content/plugins/" directory.
 2. Activate the plugin through the "Plugins" menu in WordPress.
 
+INSTALLATION
+------------
+
+1. [x] Upload `exopite-lightbox35` to the `/wp-content/plugins/exopite-lightbox35/` directory
+
+OR
+
+1. [ ] ~~Install plugin from WordPress repository (not yet)~~
+
+2. [x] Activate the plugin through the 'Plugins' menu in WordPress
+
 CHANGELOG
 ---------
 
@@ -75,3 +86,9 @@ CHANGELOG
 LICENSE DETAILS
 ---------------
 The GPL license of Sticky anything without cloning it grants you the right to use, study, share (copy), modify and (re)distribute the software, as long as these license terms are retained.
+
+DISCLAMER
+---------
+
+NO WARRANTY OF ANY KIND! USE THIS SOFTWARES AND INFORMATIONS AT YOUR OWN RISK! READ DISCLAMER.TXT!
+License: GNU General Public License v3
