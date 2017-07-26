@@ -2,7 +2,7 @@
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: http://joe.szalai.org/
 Tags: lightbox, photo, photos, image, images, video, gallery, lightview, picture, pictures, overlay
-Version: 20170725
+Version: 20170726
 Requires at least: 4.0
 Tested up to: 4.2
 Stable tag: 1.1.0
@@ -21,12 +21,14 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 - Thumbnail navigation.
 - Translation ready.
 - Fast and lightweight. (The JavaScript is only  8.32 KB)
+- Auto, gallery and single mode
 
 #### Open images and divs
 
 - Open all divs with a class `lightbox35-lightbox`.
 - Open all images which inside a link tag, except with `lightbox35-no-lightbox` class.
 - With the class `lightbox35-no-gallery`, will not listed in the gallery, but opens individually.
+- Gallery mode: open images with a class and navigat between them, every other, images open as single
 
 #### Navigate through elements
 
@@ -64,6 +66,9 @@ Browsers
 1. Looks.(screenshot-1.jpg).
 
 == Changelog ==
+
+= 20170726 =
+* ADDED: Gallery mode, open gallery with a class, every other image as single
 
 = 20170725 =
 * FIX: multiple image with anchor point not to image

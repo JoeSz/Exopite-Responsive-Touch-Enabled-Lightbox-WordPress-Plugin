@@ -2,6 +2,8 @@ jQuery(document).ready(function($) {
 /*
 ToDo:
  - compress: https://jscompress.com/
+ - hooks?
+ - wrap it in a class
 */
 var current, size;
 
@@ -29,10 +31,13 @@ var lang_download = exopite_lightbox35_vars.lang_download;
 var lang_openInNewWindow = exopite_lightbox35_vars.lang_openInNewWindow;
 var animation = exopite_lightbox35_vars.animation; // slide, fade
 var captionOn = {};
-        captionOn["div"] = true;
-        captionOn["title"] = true;
+    captionOn["div"] = true;
+    captionOn["title"] = true;
 
 if (singleImageOnly) noGallery = true;
+
+var galleryMode = ( exopite_lightbox35_vars.gallery_mode == 1 ) ? true : false;
+var galleryModeClass = exopite_lightbox35_vars.gallery_mode_container;
 
 onLoad();
 
@@ -48,7 +53,7 @@ function isImage( $item ) {
 }
 
 function selectedIndex( that, $selectedItems ) {
-    if ( isImage( $selectedItems ) ) {
+    if ( isImage( $( that ) ) ) {
         return $selectedItems.index( that );
     }
 }
@@ -61,8 +66,8 @@ function itemsSize( $selectedItems ) {
     return i;
 }
 
-// Add a cover to the clickable elements, so like youtube opening in click insted of starting
 function onLoad() {
+    // Add a cover to the clickable elements, so like youtube opening in click insted of starting
     $(selector).find(insideElement).each(function() {
         $(this).append('<div class="cover"></div>');
     });
@@ -70,10 +75,14 @@ function onLoad() {
 
 function createOrShowLightbox35( that ) {
 
+    if ( galleryMode ) {
+        insideElement = '.' + galleryModeClass;
+    }
+
     isVisible = true;
 
     // Exclude item if element (image or element) or parent link has "lightbox35-no-gallery" class
-    if ($(that).closest('a').hasClass('lightbox35-no-gallery') || $(that).hasClass('lightbox35-no-gallery')) {
+    if ($(that).closest('a').hasClass('lightbox35-no-gallery') || $(that).hasClass('lightbox35-no-gallery') || ( galleryMode && ! $(that).hasClass( galleryModeClass ) ) ) {
         // Remove lighbox if exist, if user clicked on a no-gallery item
         if ( $('#lightbox35').length > 0) $('#lightbox35').remove();
         if (!singleImageOnly) noGallery = true;
@@ -87,6 +96,7 @@ function createOrShowLightbox35( that ) {
 
     // determine the index of clicked trigger
     var slideNum = selectedIndex(that, $selectedItems);
+
     size = itemsSize( $selectedItems );
 
     // need to check on every click, we may have mixed gallery and no gallery item on the page
@@ -174,7 +184,8 @@ function createOrShowLightbox35( that ) {
             current = 0;
         } else {
             current = slideNum;
-        };
+        }
+
     }
     // Select current (clicked) slide
     selectSlide(slideNum);
@@ -480,6 +491,7 @@ $(selector).find(insideElement).on('click', function(e) {
 
     createOrShowLightbox35( this );
 
+
 });
 
 $(selector).find( insideElementFigcation ).on('click', function(e) {
@@ -626,7 +638,7 @@ var addSwipeTo = function(selector) {
                         // Clicked on the left side.
                         changeEvent('prev');
                 }
-            };
+            }
         },
         swipeLeft:function(event, direction, distance, duration, fingerCount)
         {
@@ -643,5 +655,10 @@ var addSwipeTo = function(selector) {
         // notice span isn't in the above list
     });
 };
-
+// $( 'body' ).bind('DOMNodeInserted DOMSubtreeModified DOMNodeRemoved', function(event) {
+//     $('#lightbox35').remove();
+// });
 }); // jQuery ready function ($)
+
+
+

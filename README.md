@@ -3,7 +3,7 @@
 
 - Author: Joe Szalai
 - Original idea von Wily
-- Version: 20170725
+- Version: 20170726
 - Plugin URL: https://github.com/JoeSz/exopite-lightbox35
 - Author URL: http://joe.szalai.org
 - License: GNU General Public License v3 or later
@@ -21,12 +21,14 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 - Thumbnail navigation.
 - Translation ready.
 - Fast and lightweight. (The JavaScript is only  8.32 KB)
+- Auto, gallery and single mode
 
 #### Open images and divs
 
 - Open all divs with a class `lightbox35-lightbox`.
 - Open all images which inside a link tag, except with `lightbox35-no-lightbox` class.
 - With the class `lightbox35-no-gallery`, will not listed in the gallery, but opens individually.
+- Gallery mode: open images with a class and navigat between them, every other, images open as single
 
 #### Navigate through elements
 
@@ -78,6 +80,9 @@ OR
 
 CHANGELOG
 ---------
+
+= 20170726 =
+* ADDED: Gallery mode, open gallery with a class, every other image as single
 
 = 20170725 =
 * FIX: multiple image with anchor point not to image

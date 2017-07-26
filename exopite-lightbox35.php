@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              http://joe.szalai.org/
- * @since             1.0.0
+ * @since             20170726
  * @package           exopite_Lightbox35
  *
  * @wordpress-plugin
  * Plugin Name:       Exopite Lightbox35
  * Plugin URI:        http://joe.szalai.org/
  * Description:       Responsive, Touch-enabled, jQuery Image Lightbox Plugin. Open images and divs (with class "lightbox35-lightbox") in the given selector. Fast, lightwieght and freeware. Based on: http://vilsoni.info/demo/?i=ilb.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Joe Szalai
  * Author URI:        http://joe.szalai.org/
  * License:           GPL-2.0+

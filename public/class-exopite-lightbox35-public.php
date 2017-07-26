@@ -99,7 +99,7 @@ class exopite_Lightbox35_Public {
 		wp_register_script('jquery-touch-swipe', "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.15/jquery.touchSwipe.min.js", array('jquery'), '1.9.1', true);
 		wp_enqueue_script('jquery-touch-swipe');
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/exopite-lightbox35-public.min.js', array( 'jquery-touch-swipe' ), $this->version, true );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/exopite-lightbox35-public.js', array( 'jquery-touch-swipe' ), $this->version, true );
 
 		// pass args to jQuery
 		// Source: http://code.tutsplus.com/tutorials/how-to-pass-php-data-and-strings-to-javascript-in-wordpress--wp-34699
@@ -113,19 +113,23 @@ class exopite_Lightbox35_Public {
         $hide_open_in_new_window = (isset($options['hide_open_in_new_window']) && !empty($options['hide_open_in_new_window'])) ? 1 : 0;
         $hide_download = (isset($options['hide_download']) && !empty($options['hide_download'])) ? 1 : 0;
 
-		$exopite_lightbox35_js_options = array(
-		    'main_container'  	=> $main_container,
-		    'lightbox35_style'	=> $style,
-		    'animation'			=> $animation,
-		    'single_image_only'	=> $single_image_only,
-		    'hide_caption'		=> $hide_caption,
-		    'hide_thumbnails'	=> $hide_thumbnails,
-		    'hide_open_in_new_window' 	=> $hide_open_in_new_window,
-		    'hide_download'		=> $hide_download,
-		    'plugin_url'		=> plugins_url() . '/' . $this->plugin_name,
-		    'lang_download'			=> __('download', $this->plugin_name),
-		    'lang_openInNewWindow'			=> __('open', $this->plugin_name),
+        $gallery_mode = (isset($options['gallery_mode']) && !empty($options['gallery_mode'])) ? 1 : 0;
+        $gallery_mode_container = (isset($options['gallery_mode_container']) && !empty($options['gallery_mode_container'])) ? esc_attr($options['gallery_mode_container']) : 'lightbox35-gallery';
 
+		$exopite_lightbox35_js_options = array(
+		    'main_container'  	      => $main_container,
+		    'lightbox35_style'	      => $style,
+		    'animation'			      => $animation,
+		    'single_image_only'	      => $single_image_only,
+		    'hide_caption'		      => $hide_caption,
+		    'hide_thumbnails'	      => $hide_thumbnails,
+		    'hide_open_in_new_window' => $hide_open_in_new_window,
+		    'hide_download'		      => $hide_download,
+		    'plugin_url'		      => plugins_url() . '/' . $this->plugin_name,
+		    'lang_download'		      => __('download', $this->plugin_name),
+		    'lang_openInNewWindow'    => __('open', $this->plugin_name),
+            'gallery_mode'            => $gallery_mode,
+            'gallery_mode_container'  => $gallery_mode_container,
 		);
 		wp_localize_script( $this->plugin_name, 'exopite_lightbox35_vars', $exopite_lightbox35_js_options );
 	}

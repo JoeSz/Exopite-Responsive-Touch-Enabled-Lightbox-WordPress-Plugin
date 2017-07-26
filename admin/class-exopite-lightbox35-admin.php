@@ -134,6 +134,9 @@ class exopite_Lightbox35_Admin {
 	    $valid['animation'] = (isset($input['animation']) && !empty($input['animation'])) ? esc_attr($input['animation']) : 'slide';
 	    $valid['main_container'] = (isset($input['main_container']) && !empty($input['main_container'])) ? esc_attr($input['main_container']) : '.entry-thumbnail, .entry-header, .entry-content';
 
+        $valid['gallery_mode'] = (isset($input['gallery_mode']) && !empty($input['gallery_mode'])) ? 1 : 0;
+        $valid['gallery_mode_container'] = (isset($input['gallery_mode_container']) && !empty($input['gallery_mode_container'])) ? esc_attr($input['gallery_mode_container']) : 'lightbox35-gallery';
+
 	    return $valid;
 	}
 

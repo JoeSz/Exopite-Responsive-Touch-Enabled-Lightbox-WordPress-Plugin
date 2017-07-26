@@ -35,6 +35,9 @@ if ( ! defined( 'WPINC' ) ) {
         $hide_open_in_new_window = (isset($options['hide_open_in_new_window']) && !empty($options['hide_open_in_new_window'])) ? 1 : 0;
         $hide_download = (isset($options['hide_download']) && !empty($options['hide_download'])) ? 1 : 0;
 
+        $gallery_mode = (isset($options['gallery_mode']) && !empty($options['gallery_mode'])) ? 1 : 0;
+        $gallery_mode_container = (isset($options['gallery_mode_container']) && !empty($options['gallery_mode_container'])) ? $options['gallery_mode_container'] : 'lightbox35-gallery';
+
         settings_fields($this->plugin_name);
         do_settings_sections($this->plugin_name);
 
@@ -170,6 +173,30 @@ if ( ! defined( 'WPINC' ) ) {
         </legend>
         <input type="text" class="regular-text" id="<?php echo $this->plugin_name; ?>-main_container" name="<?php echo $this->plugin_name; ?>[main_container]" value="<?php if(!empty($main_container)) echo $main_container; else echo '#slide-up-content-container'; ?>"/>
     </fieldset>
+
+    <p>
+
+    <!-- Gallery mode -->
+    <fieldset>
+        <legend class="screen-reader-text">
+            <span><?php _e('Gallery mode', $this->plugin_name); ?></span>
+        </legend>
+        <label for="<?php echo $this->plugin_name; ?>-hide_open_in_new_window">
+            <input type="checkbox" id="<?php echo $this->plugin_name; ?>-gallery_mode" name="<?php echo $this->plugin_name; ?>[gallery_mode]" value="1" <?php checked( $gallery_mode, 1 ); ?> />
+            <span><?php esc_attr_e('Gallery mode', $this->plugin_name); ?></span>
+        </label>
+    </fieldset>
+
+    <!-- Main container -->
+    <fieldset>
+        <p><?php _e('You can specify gallery mode class here. Exopite LightBox35 looking images as gallery with this class. Other images will be opened as single. Without the leading point.', $this->plugin_name); ?></p>
+        <legend class="screen-reader-text">
+            <span><?php _e('Lightbox Main Container', $this->plugin_name); ?></span>
+        </legend>
+        <input type="text" class="regular-text" id="<?php echo $this->plugin_name; ?>-gallery_mode_container" name="<?php echo $this->plugin_name; ?>[gallery_mode_container]" value="<?php if(!empty($gallery_mode_container)) echo $gallery_mode_container; else echo 'lightbox35-gallery'; ?>"/>
+    </fieldset>
+
+    </p>
 
 	<?php submit_button(__('Save all changes', $this->plugin_name), 'primary','submit', TRUE); ?>
     </form>
