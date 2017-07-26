@@ -35,6 +35,13 @@ WordPress i18n and Localization
 https://www.sitepoint.com/wordpress-i18n/
 https://www.sitepoint.com/wordpress-i18n-make-your-plugin-translation-ready/
  */
+/*
+ToDo:
+ - hooks?
+ - wrap it in a class
+ - fix __/_e Text Domain
+*/
+
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
