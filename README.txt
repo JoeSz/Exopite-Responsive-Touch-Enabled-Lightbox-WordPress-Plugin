@@ -1,17 +1,17 @@
-# Responsive Touch-enabled Jquery Image Lightbox
-## Wordpress Plugin
+=== Plugin Name ===
+Contributors: (this should be a list of wordpress.org userid's)
+Donate link: http://joe.szalai.org/
+Tags: lightbox, photo, photos, image, images, video, gallery, lightview, picture, pictures, overlay
+Version: 20170725
+Requires at least: 4.0
+Tested up to: 4.2
+Stable tag: 1.1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-- Author: Joe Szalai
-- Original idea von Wily
-- Version: 20170725
-- Plugin URL: https://github.com/JoeSz/exopite-lightbox35
-- Author URL: http://joe.szalai.org
-- License: GNU General Public License v3 or later
-- License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Responsive Touch-enabled jQuery Image Lightbox Plugin. Based on: <a href="http://vilsoni.info/demo/?i=ilb">http://vilsoni.info/demo/?i=ilb</a>.
 
-DESCRIPTION
------------
-
+== Description ==
 Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 
 - Open images and divs with lightbox effect.
@@ -30,7 +30,7 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 
 #### Navigate through elements
 
-- Arrow keys.
+- Awrow keys.
 - Mouse wheel.
 - Click on the left or right side of the images.
 - Tap on the left or right side of the images.
@@ -40,17 +40,12 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 
 Caption on the image, the program looking for the div inside in the link (A) tag with a class "lightbox35-lightbox-caption", if none, then looking for the image title attribute. With CSS you can customize the look and feel. You can use HTML inside div caption but because nested link are invalid, please place your link inside caption div like: [url="link" attribute="value"]name of the link[/url].
 
-Deskop                     |  Mobile                |  Admin options
-:-------------------------:|:----------------------:|:-------------------------:
-![](assets/screenshot-1.jpg)      |  ![](assets/screenshot-2.jpg) |  ![](assets/screenshot-3.jpg)
-
-REQUIREMENTS
-------------
+= Requirements =
 
 Server
 
 * WordPress 4.0+ (May work with earlier versions too)
-* PHP 5.3+ (Required)
+* PHP 5+ (Required)
 * jQuery 1.9.1+
 
 Browsers
@@ -59,39 +54,23 @@ Browsers
 * Firefox, Chrome, Safari, Opera, IE 10+
 * Tested on Firefox, Chrome, Edge, IE 11
 
-INSTALLATION
-------------
+== Installation ==
 
 1. Upload "lightbox35" to the "/wp-content/plugins/" directory.
 2. Activate the plugin through the "Plugins" menu in WordPress.
 
-INSTALLATION
-------------
+== Screenshots ==
 
-1. [x] Upload `exopite-lightbox35` to the `/wp-content/plugins/exopite-lightbox35/` directory
+1. Looks.(screenshot-1.jpg).
 
-OR
-
-1. [ ] ~~Install plugin from WordPress repository (not yet)~~
-
-2. [x] Activate the plugin through the 'Plugins' menu in WordPress
-
-CHANGELOG
----------
+== Changelog ==
 
 = 20170725 =
 * FIX: multiple image with anchor point not to image
 
 = 1.1.0 =
-* Initial release
+* Initial release.
 
+== License Details ==
 
-LICENSE DETAILS
----------------
 The GPL license of Sticky anything without cloning it grants you the right to use, study, share (copy), modify and (re)distribute the software, as long as these license terms are retained.
-
-DISCLAMER
----------
-
-NO WARRANTY OF ANY KIND! USE THIS SOFTWARES AND INFORMATIONS AT YOUR OWN RISK! READ DISCLAMER.TXT!
-License: GNU General Public License v3
