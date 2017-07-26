@@ -23,6 +23,11 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 - Fast and lightweight. (The JavaScript is only  8.32 KB)
 - Auto, gallery and single mode
 
+### Live preview <br />
+<p align="center">
+    <a href="https://joe.szalai.org/exopite/lightbox35/" rel="Theme URL and Live Demo"><img src="https://joe.szalai.org/wp-content/uploads/2017/07/plugin_live_demo.png" alt="Theme URL and Live Demo"></a>
+</p>
+
 #### Open images and divs
 
 - Open all divs with a class `lightbox35-lightbox`.
