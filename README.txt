@@ -28,7 +28,7 @@ Responsive Touch-enabled jQuery Image Lightbox. (See screenshots)
 - Open all divs with a class `lightbox35-lightbox`.
 - Open all images which inside a link tag, except with `lightbox35-no-lightbox` class.
 - With the class `lightbox35-no-gallery`, will not listed in the gallery, but opens individually.
-- Gallery mode: open images with a class and navigat between them, every other, images open as single
+- Gallery mode: open images with a class `lightbox35-gallery` and navigate between them, every other, images open as single
 
 #### Navigate through elements
 
