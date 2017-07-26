@@ -89,7 +89,7 @@ if ( ! defined( 'WPINC' ) ) {
         </legend>
         <label for="<?php echo $this->plugin_name; ?>-single_image_only">
             <input type="checkbox" id="<?php echo $this->plugin_name; ?>-single_image_only" name="<?php echo $this->plugin_name; ?>[single_image_only]" value="1" <?php checked( $single_image_only, 1 ); ?> />
-            <span><?php esc_attr_e('Single image only', $this->plugin_name); ?></span>
+            <span><?php esc_attr_e('Single image mode', $this->plugin_name); ?></span>
         </label>
     </fieldset>
 
