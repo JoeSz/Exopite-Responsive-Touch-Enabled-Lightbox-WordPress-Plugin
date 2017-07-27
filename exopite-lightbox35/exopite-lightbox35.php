@@ -9,7 +9,7 @@
  * that starts the plugin.
  *
  * @link              http://joe.szalai.org/
- * @since             20170726
+ * @since             20170727
  * @package           exopite_Lightbox35
  *
  * @wordpress-plugin

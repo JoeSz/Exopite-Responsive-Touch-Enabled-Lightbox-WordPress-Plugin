@@ -86,11 +86,15 @@ OR
 CHANGELOG
 ---------
 
+= 20170727 =
+* FIXED: Remove broken link from info
+* ENHANCEMENT: Regroup "modes"
+
 = 20170726 =
 * ADDED: Gallery mode, open gallery with a class, every other image as single
 
 = 20170725 =
-* FIX: multiple image with anchor point not to image
+* FIXED: multiple image with anchor point not to image
 
 = 1.1.0 =
 * Initial release
