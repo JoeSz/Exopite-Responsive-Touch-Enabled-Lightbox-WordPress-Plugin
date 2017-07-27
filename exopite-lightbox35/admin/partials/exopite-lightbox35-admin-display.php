@@ -61,7 +61,7 @@ if ( ! defined( 'WPINC' ) ) {
                         </h2>
 
                         <div class="inside">
-                            <p><?php _e('Responsive Touch-enabled jQuery Image Lightbox Plugin. Based on:', $this->plugin_name); ?> <a target="_blank" href="http://vilsoni.info/demo/?i=ilb">http://vilsoni.info/demo/?i=ilb</a>.</p>
+                            <p><?php _e('Responsive Touch-enabled jQuery Image Lightbox Plugin.', $this->plugin_name); ?></p>
                             <p><?php _e('Open all DIVs (required class "lightbox35-lightbox") and images (for images no class required!) on the page, which inside a link tag, except with "lightbox35-no-lightbox" class (this only required for images, div without the "lightbox35-lightbox" class will not listed automatically). Also if the link tag has the class "lightbox35-no-gallery", will not listed in the gallery, but opens individually.', $this->plugin_name); ?></p>
                             <p><?php _e('Caption on the image, the program looking for the div inside in the link (A) tag with a class "lightbox35-lightbox-caption", if none, then looking for the image title attribute. With CSS you can customize the look and feel. You can use HTML inside div caption but because nested link are invalid, please place your link inside caption div like: [url="link" attribute="value"]name of the link[/url].', $this->plugin_name); ?></p>
                             <p><?php _e('Navigate between images with the arrow keys, mouse wheel, click on image left or right side and with a swipe as well.', $this->plugin_name); ?></p>
