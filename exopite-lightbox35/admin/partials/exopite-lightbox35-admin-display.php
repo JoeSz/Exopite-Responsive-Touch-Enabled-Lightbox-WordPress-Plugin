@@ -82,17 +82,6 @@ if ( ! defined( 'WPINC' ) ) {
     </div>
     <br class="clear">
 
-    <!-- Single image only -->
-    <fieldset>
-        <legend class="screen-reader-text">
-            <span><?php _e('single_image_only', $this->plugin_name); ?></span>
-        </legend>
-        <label for="<?php echo $this->plugin_name; ?>-single_image_only">
-            <input type="checkbox" id="<?php echo $this->plugin_name; ?>-single_image_only" name="<?php echo $this->plugin_name; ?>[single_image_only]" value="1" <?php checked( $single_image_only, 1 ); ?> />
-            <span><?php esc_attr_e('Single image mode', $this->plugin_name); ?></span>
-        </label>
-    </fieldset>
-
     <!-- Hide caption -->
     <fieldset>
         <legend class="screen-reader-text">
@@ -175,6 +164,17 @@ if ( ! defined( 'WPINC' ) ) {
     </fieldset>
 
     <p>
+
+    <!-- Single image only -->
+    <fieldset>
+        <legend class="screen-reader-text">
+            <span><?php _e('single_image_only', $this->plugin_name); ?></span>
+        </legend>
+        <label for="<?php echo $this->plugin_name; ?>-single_image_only">
+            <input type="checkbox" id="<?php echo $this->plugin_name; ?>-single_image_only" name="<?php echo $this->plugin_name; ?>[single_image_only]" value="1" <?php checked( $single_image_only, 1 ); ?> />
+            <span><?php esc_attr_e('Single image mode', $this->plugin_name); ?></span>
+        </label>
+    </fieldset>
 
     <!-- Gallery mode -->
     <fieldset>
