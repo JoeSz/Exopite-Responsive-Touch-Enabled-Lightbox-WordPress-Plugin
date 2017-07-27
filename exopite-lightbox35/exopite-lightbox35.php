@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://joe.szalai.org/
+ * @link              https://joe.szalai.org/
  * @since             20170727
  * @package           exopite_Lightbox35
  *
  * @wordpress-plugin
  * Plugin Name:       Exopite Lightbox35
- * Plugin URI:        http://joe.szalai.org/
- * Description:       Responsive, Touch-enabled, jQuery Image Lightbox Plugin. Open images and divs (with class "lightbox35-lightbox") in the given selector. Fast, lightwieght and freeware. Based on: http://vilsoni.info/demo/?i=ilb.
- * Version:           1.1.0
+ * Plugin URI:        https://joe.szalai.org/exopite/lightbox35/
+ * Description:       Responsive, Touch-enabled, jQuery Image Lightbox Plugin. Open images and divs (with class "lightbox35-lightbox") in the given selector. Fast, lightwieght and freeware.
+ * Version:           20170727
  * Author:            Joe Szalai
- * Author URI:        http://joe.szalai.org/
+ * Author URI:        https://joe.szalai.org/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       exopite-lightbox35
