@@ -4,8 +4,8 @@
 - Author: Joe Szalai
 - Original idea von Wily
 - Version: 20170726
-- Plugin URL: https://github.com/JoeSz/exopite-lightbox35
-- Author URL: http://joe.szalai.org
+- Plugin URL: https://github.com/JoeSz/Exopite-Responsive-Touch-Enabled-Lightbox-WordPress-Plugin
+- Author URL: https://joe.szalai.org
 - License: GNU General Public License v3 or later
 - License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -65,12 +65,6 @@ Browsers
 * Modern Browsers
 * Firefox, Chrome, Safari, Opera, IE 10+
 * Tested on Firefox, Chrome, Edge, IE 11
-
-INSTALLATION
-------------
-
-1. Upload "lightbox35" to the "/wp-content/plugins/" directory.
-2. Activate the plugin through the "Plugins" menu in WordPress.
 
 INSTALLATION
 ------------
