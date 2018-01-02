@@ -1,5 +1,10 @@
 jQuery(document).ready(function($) {
-
+/*
+ToDo:
+ - compress: https://jscompress.com/
+ - hooks?
+ - wrap it in a class
+*/
 var current, size;
 
 // Get style from plugin settings
