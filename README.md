@@ -48,7 +48,7 @@ Caption on the image, the program looking for the div inside in the link (A) tag
 
 Deskop                     |  Mobile                |  Admin options
 :-------------------------:|:----------------------:|:-------------------------:
-![](assets/screenshot-1.jpg)      |  ![](assets/screenshot-2.jpg) |  ![](assets/screenshot-3.jpg)
+![](exopite-lightbox35/assets/screenshot-1.jpg)      |  ![](exopite-lightbox35/assets/screenshot-2.jpg) |  ![](exopite-lightbox35/assets/screenshot-3.jpg)
 
 REQUIREMENTS
 ------------
