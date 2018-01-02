@@ -119,6 +119,8 @@ class exopite_Lightbox35 {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-exopite-lightbox35-public.php';
 
+        require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/exopite-simple-options/exopite-simple-options-framework-class.php';
+
 		$this->loader = new exopite_Lightbox35_Loader();
 
 	}
@@ -151,17 +153,8 @@ class exopite_Lightbox35 {
 
 		$plugin_admin = new exopite_Lightbox35_Admin( $this->get_plugin_name(), $this->get_version() );
 
-		// From here added
-		// Save/Update our plugin options
-		$this->loader->add_action('admin_init', $plugin_admin, 'options_update');
-
-		// Add menu item
-		$this->loader->add_action( 'admin_menu', $plugin_admin, 'add_plugin_admin_menu' );
-
-		// Add Settings link to the plugin
-		$plugin_basename = plugin_basename( plugin_dir_path( __DIR__ ) . $this->plugin_name . '.php' );
-
-		$this->loader->add_filter( 'plugin_action_links_' . $plugin_basename, $plugin_admin, 'add_action_links' );
+        // Save/Update our plugin options
+        $this->loader->add_action('init', $plugin_admin, 'create_menu');
 
 	}
 
