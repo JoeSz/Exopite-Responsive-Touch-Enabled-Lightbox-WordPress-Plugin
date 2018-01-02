@@ -2,8 +2,7 @@
 ## Wordpress Plugin
 
 - Author: Joe Szalai
-- Original idea von Wily
-- Version: 20170726
+- Version: 20180102
 - Plugin URL: https://github.com/JoeSz/Exopite-Responsive-Touch-Enabled-Lightbox-WordPress-Plugin
 - Author URL: https://joe.szalai.org
 - License: GNU General Public License v3 or later
@@ -79,6 +78,9 @@ OR
 
 CHANGELOG
 ---------
+
+= 20180102 - 2018-01-02 =
+* Added: new options menu.
 
 = 20170727 =
 * FIXED: Remove broken link from info
