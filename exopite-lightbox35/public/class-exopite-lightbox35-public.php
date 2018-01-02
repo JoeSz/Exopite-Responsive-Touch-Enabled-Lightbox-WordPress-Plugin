@@ -99,22 +99,24 @@ class exopite_Lightbox35_Public {
 		wp_register_script('jquery-touch-swipe', "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.15/jquery.touchSwipe.min.js", array('jquery'), '1.9.1', true);
 		wp_enqueue_script('jquery-touch-swipe');
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/exopite-lightbox35-public.min.js', array( 'jquery-touch-swipe' ), $this->version, true );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/exopite-lightbox35-public.js', array( 'jquery-touch-swipe' ), $this->version, true );
 
 		// pass args to jQuery
 		// Source: http://code.tutsplus.com/tutorials/how-to-pass-php-data-and-strings-to-javascript-in-wordpress--wp-34699
 		$options = get_option($this->plugin_name);
+
         $style = (isset($options['style']) && !empty($options['style'])) ? esc_attr($options['style']) : '1';
         $animation = (isset($options['animation']) && !empty($options['animation'])) ? esc_attr($options['animation']) : 'slide';
-        $main_container = (isset($options['main_container']) && !empty($options['main_container'])) ? esc_attr($options['main_container']) : '.entry-thumbnail, .entry-header, .entry-content';
-        $single_image_only = (isset($options['single_image_only']) && !empty($options['single_image_only'])) ? 1 : 0;
-        $hide_caption = (isset($options['hide_caption']) && !empty($options['hide_caption'])) ? 1 : 0;
-        $hide_thumbnails = (isset($options['hide_thumbnails']) && !empty($options['hide_thumbnails'])) ? 1 : 0;
-        $hide_open_in_new_window = (isset($options['hide_open_in_new_window']) && !empty($options['hide_open_in_new_window'])) ? 1 : 0;
-        $hide_download = (isset($options['hide_download']) && !empty($options['hide_download'])) ? 1 : 0;
 
-        $gallery_mode = (isset($options['gallery_mode']) && !empty($options['gallery_mode'])) ? 1 : 0;
+        $main_container = (isset($options['main_container']) && !empty($options['main_container'])) ? esc_attr($options['main_container']) : '.entry-thumbnail, .entry-header, .entry-content';
         $gallery_mode_container = (isset($options['gallery_mode_container']) && !empty($options['gallery_mode_container'])) ? esc_attr($options['gallery_mode_container']) : 'lightbox35-gallery';
+
+        $single_image_only = (isset($options['single_image_only']) && $options['single_image_only'] == 'yes' ) ? 1 : 0;
+        $hide_caption = (isset($options['hide_caption']) && $options['hide_caption'] == 'yes' ) ? 1 : 0;
+        $hide_thumbnails = (isset($options['hide_thumbnails']) && $options['hide_thumbnails'] == 'yes' ) ? 1 : 0;
+        $hide_open_in_new_window = (isset($options['hide_open_in_new_window']) && $options['hide_open_in_new_window'] == 'yes' ) ? 1 : 0;
+        $hide_download = (isset($options['hide_download']) && $options['hide_download'] == 'yes' ) ? 1 : 0;
+        $gallery_mode = (isset($options['gallery_mode']) && $options['gallery_mode'] == 'yes' ) ? 1 : 0;
 
 		$exopite_lightbox35_js_options = array(
 		    'main_container'  	      => $main_container,
@@ -126,8 +128,8 @@ class exopite_Lightbox35_Public {
 		    'hide_open_in_new_window' => $hide_open_in_new_window,
 		    'hide_download'		      => $hide_download,
 		    'plugin_url'		      => plugins_url() . '/' . $this->plugin_name,
-		    'lang_download'		      => __('download', $this->plugin_name),
-		    'lang_openInNewWindow'    => __('open', $this->plugin_name),
+		    'lang_download'		      => esc_html__('download', $this->plugin_name),
+		    'lang_openInNewWindow'    => esc_html__('open', $this->plugin_name),
             'gallery_mode'            => $gallery_mode,
             'gallery_mode_container'  => $gallery_mode_container,
 		);
