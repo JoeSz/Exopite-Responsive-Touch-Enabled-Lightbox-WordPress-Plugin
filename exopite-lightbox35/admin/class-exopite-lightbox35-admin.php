@@ -74,20 +74,7 @@ class exopite_Lightbox35_Admin {
 	 * @since    1.0.0
 	 */
 
-	public function add_plugin_admin_menu() {
-
-	    /*
-	     * Add a settings page for this plugin to the Settings menu.
-	     *
-	     * NOTE:  Alternative menu locations are available via WordPress administration menu functions.
-	     *
-	     *        Administration Menus: http://codex.wordpress.org/Administration_Menus
-	     *
-	     */
-	    //add_options_page( 'exopite LightBox35 Options Functions Setup', 'exopite LightBox35', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page')
-	    add_submenu_page( 'plugins.php', 'Exopite LightBox35 Options Functions Setup', 'Exopite LightBox35', 'manage_options', $this->plugin_name, array($this, 'display_plugin_setup_page')
-	    );
-	}
+	public function add_plugin_admin_menu() { }
 
     public function create_menu() {
 
@@ -162,6 +149,7 @@ class exopite_Lightbox35_Admin {
                     ),
                     'default'       => '1',
                     'class'         => 'chosen',
+                    'dependency' => array( 'hide_caption', '==', 'false' ),
                 ),
 
                 array(
@@ -197,6 +185,7 @@ class exopite_Lightbox35_Admin {
                     'title'     => esc_attr__( 'Gallery Mode Container', 'exopite-lightbox35' ),
                     'default'   => 'lightbox35-gallery',
                     'before'    => esc_attr__( 'You can specify gallery mode class here. Exopite LightBox35 looking images as gallery with this class. Other images will be opened as single. Without the leading point.', 'exopite-lightbox35' ),
+                    'dependency' => array( 'gallery_mode', '==', 'true' ),
                 ),
 
                 array(
