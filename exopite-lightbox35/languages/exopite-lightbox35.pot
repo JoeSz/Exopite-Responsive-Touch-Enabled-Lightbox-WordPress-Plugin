@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-23 11:43+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin/class-exopite-lightbox35-admin.php:98
+msgid "Responsive Touch-enabled jQuery Image Lightbox Plugin."
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:99
+msgid ""
+"Open all DIVs (required class \"lightbox35-lightbox\") and images (for "
+"images no class required!) on the page, which inside a link tag, except with "
+"\"lightbox35-no-lightbox\" class (this only required for images, div without "
+"the \"lightbox35-lightbox\" class will not listed automatically). Also if "
+"the link tag has the class \"lightbox35-no-gallery\", will not listed in the "
+"gallery, but opens individually."
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:100
+msgid ""
+"Caption on the image, the program looking for the div inside in the link (A) "
+"tag with a class \"lightbox35-lightbox-caption\", if none, then looking for "
+"the image title attribute. With CSS you can customize the look and feel. You "
+"can use HTML inside div caption but because nested link are invalid, please "
+"place your link inside caption div like: [url=\"link\" attribute=\"value\"]"
+"name of the link[/url]."
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:101
+msgid ""
+"Navigate between images with the arrow keys, mouse wheel, click on image "
+"left or right side and with a swipe as well."
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:102
+msgid "Responsive (working well on mobiles too)."
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:103
+msgid "Feel free to modify and share!"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:104
+msgid "Information"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:110
+msgid "Single image mode"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:117
+msgid "Hide caption"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:124
+msgid "Hide thumbnails"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:131
+msgid "Hide open in new window"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:138
+msgid "Hide download"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:145
+msgid "Caption style"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:147
+msgid "Inline caption"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:148
+msgid "Caption under the image"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:158
+msgid "Changing slide animation"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:160
+msgid "Slide"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:161
+msgid "Fade"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:170
+msgid "Lightbox Main Container"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:172
+msgid ""
+"You can specify main container here. Exopite LightBox35 looking images for "
+"lightbox effect only inside this container."
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:178
+msgid "Gallery mode"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:185
+msgid "Gallery Mode Container"
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:187
+msgid ""
+"You can specify gallery mode class here. Exopite LightBox35 looking images "
+"as gallery with this class. Other images will be opened as single. Without "
+"the leading point."
+msgstr ""
+
+#: admin/class-exopite-lightbox35-admin.php:193
+msgid ""
+"A standardized, organized, object-oriented foundation for building high-"
+"quality WordPress Plugins."
+msgstr ""
+
+#: admin/exopite-simple-options/exopite-simple-options-framework-class.php:205
+msgid "Settings"
+msgstr ""
+
+#: admin/exopite-simple-options/exopite-simple-options-framework-class.php:591
+msgid "ERROR:"
+msgstr ""
+
+#: admin/exopite-simple-options/exopite-simple-options-framework-class.php:592
+msgid "This field class is not available!"
+msgstr ""
+
+#: admin/exopite-simple-options/exopite-simple-options-framework-class.php:615
+msgid "Saving..."
+msgstr ""
+
+#: admin/exopite-simple-options/exopite-simple-options-framework-class.php:615
+msgid "Saved Successfully."
+msgstr ""
+
+#: admin/exopite-simple-options/exopite-simple-options-framework-class.php:624
+#: admin/exopite-simple-options/exopite-simple-options-framework-class.php:639
+msgid "Save Settings"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/attached.php:43
+#, php-format
+msgid "There is no attachment with type %s for this %s."
+msgstr ""
+
+#: admin/exopite-simple-options/fields/image.php:74
+msgid "Add Image"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:70
+msgid "Drop files here"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:79
+msgid "Select files"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:82
+msgid "Upload"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:86
+msgid "Processing dropped files..."
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:100
+#: admin/exopite-simple-options/fields/upload.php:126
+msgid "Cancel"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:101
+msgid "Retry"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:102
+msgid "Delete"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:110
+msgid "Close"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:117
+msgid "No"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:118
+msgid "Yes"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:127
+msgid "Ok"
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:166
+msgid "Max amount of files: "
+msgstr ""
+
+#: admin/exopite-simple-options/fields/upload.php:167
+msgid "Max file upload size: "
+msgstr ""
+
+#: admin/exopite-simple-options/fields/video.php:56
+msgid "Add Video"
+msgstr ""
+
+#: public/class-exopite-lightbox35-public.php:131
+msgid "download"
+msgstr ""
+
+#: public/class-exopite-lightbox35-public.php:132
+msgid "open"
+msgstr ""
