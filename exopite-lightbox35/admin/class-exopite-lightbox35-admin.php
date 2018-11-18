@@ -81,12 +81,13 @@ class exopite_Lightbox35_Admin {
         $config = array(
             'type'              => 'menu',                          // Required, menu or metabox
             'id'                => $this->plugin_name,    // Required, meta box id, unique per page, to save: get_option( id )
-            'menu'              => 'plugins.php',                   // Required, sub page to your options page
+            'parent'            => 'plugins.php',                   // Required, sub page to your options page
             'submenu'           => true,                            // Required for submenu
             'title'             => 'Exopite LightBox35',               //The name of this page
             'capability'        => 'manage_options',                // The capability needed to view the page
             'plugin_basename'   =>  plugin_basename( plugin_dir_path( __DIR__ ) . $this->plugin_name . '.php' ),
             'tabbed'            => false,
+            'multilang'         => false,
         );
 
         $fields[] = array(
