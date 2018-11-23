@@ -2,9 +2,9 @@
 Contributors: (this should be a list of wordpress.org userid's)
 Donate link: http://joe.szalai.org/
 Tags: lightbox, photo, photos, image, images, video, gallery, lightview, picture, pictures, overlay
-Version: 20180102
+Version: 20181123
 Requires at least: 4.0
-Tested up to: 4.2
+Tested up to: 4.9.8
 Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -68,6 +68,10 @@ Browsers
 1. Looks.(screenshot-1.jpg).
 
 == Changelog ==
+
+= 20181123 - 2018-11-23 =
+* Added: Exopite Simple Options Framework.
+* Added: Plugin update checker.
 
 = 20180102 - 2018-01-02 =
 * Added: new options menu.

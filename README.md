@@ -79,6 +79,10 @@ OR
 CHANGELOG
 ---------
 
+= 20181123 - 2018-11-23 =
+* Added: Exopite Simple Options Framework.
+* Added: Plugin update checker.
+
 = 20180102 - 2018-01-02 =
 * Added: new options menu.
 
