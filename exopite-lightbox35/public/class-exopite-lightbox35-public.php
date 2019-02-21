@@ -96,8 +96,9 @@ class exopite_Lightbox35_Public {
 		 * class.
 		 */
 
-		wp_register_script('jquery-touch-swipe', "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.15/jquery.touchSwipe.min.js", array('jquery'), '1.9.1', true);
-		wp_enqueue_script('jquery-touch-swipe');
+		// wp_register_script('jquery-touch-swipe', "https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.15/jquery.touchSwipe.min.js", array('jquery'), '1.9.1', true);
+		wp_enqueue_script( 'jquery-touch-swipe', plugin_dir_url( __FILE__ ) . 'js/jquery.touchSwipe.1.6.15.min.js', array( 'jquery' ), '1.6.15', true );
+		wp_enqueue_script( 'jquery-touch-swipe' );
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/exopite-lightbox35-public.min.js', array( 'jquery-touch-swipe' ), $this->version, true );
 
