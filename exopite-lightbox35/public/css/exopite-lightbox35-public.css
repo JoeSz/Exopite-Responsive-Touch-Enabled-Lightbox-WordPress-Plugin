@@ -208,3 +208,6 @@
 #lightbox35 .nav-right {
     right: 10px;
 }
+.exopite-multifilter-items.no-gap-container + .exopite-multifilter-paginations {
+    padding-top: 20px;
+}
