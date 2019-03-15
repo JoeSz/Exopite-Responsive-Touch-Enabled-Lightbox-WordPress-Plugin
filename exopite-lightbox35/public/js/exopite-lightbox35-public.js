@@ -42,13 +42,11 @@ var galleryModeClass = exopite_lightbox35_vars.gallery_mode_container;
 onLoad();
 
 function isImage( $item ) {
-    if (  $item.is("img") ) {
+    if ( $item.is("img") || $item.is("figcaption") ) {
         var $href =  $item.closest('a').attr('href');
         if ( isImageExt( $href ) ) {
             return true;
         }
-    } else {
-        return false;
     }
 }
 
@@ -101,6 +99,22 @@ function createOrShowLightbox35( that ) {
 
     // need to check on every click, we may have mixed gallery and no gallery item on the page
     hideThumbnails = ( noGallery || size < 2 || singleImageOnly ) ? true : false;
+
+    /**
+     * React on DOM change. If lightbox already exist, check if slide is loaded.
+     * If not, reload all.
+     */
+    if ($('#lightbox35').length > 0) {
+        var slidesClicked = slideNum + 1;
+        var slidesSum = $('#lightbox35 .thumbnail').length;
+        if (slidesClicked > slidesSum) {
+            $('#lightbox35').remove();
+        }
+
+        if ($(that).closest('a').attr('href') != $('#lightbox35 .slide:eq(' + (slideNum) + ')').find('img').attr('src')) {
+            $('#lightbox35').remove();
+        }
+    }
 
     // find out if #lightbox exists
     if ($('#lightbox35').length > 0) {
@@ -494,13 +508,19 @@ $(selector).find(insideElement).on('click', function(e) {
 
 });
 
-$(selector).find( insideElementFigcation ).on('click', function(e) {
+$(selector).on('click', insideElementFigcation, function(e) {
 
-    if ( ! isImage( $(this).prev('img') ) ) return;
+    if ( isImage( $(this).prev('img') ) ) {
+        $img = $(this).prev('img');
+    } else if ( isImage( $(this).parents('a').find('img') ) ) {
+        $img = $(this).parents('a').find('img');
+    } else {
+        return;
+    }
 
     e.preventDefault();
 
-    createOrShowLightbox35( $(this).prev('img') );
+    createOrShowLightbox35( $img );
 
 });
 
