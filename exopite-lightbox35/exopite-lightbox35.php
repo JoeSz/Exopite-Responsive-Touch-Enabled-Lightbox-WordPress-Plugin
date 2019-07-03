@@ -16,7 +16,7 @@
  * Plugin Name:       Exopite Lightbox35
  * Plugin URI:        https://joe.szalai.org/exopite/lightbox35/
  * Description:       Responsive, Touch-enabled, jQuery Image Lightbox Plugin. Open images and divs (with class "lightbox35-lightbox") in the given selector. Fast, lightwieght and freeware.
- * Version:           20181123
+ * Version:           20190521
  * Author:            Joe Szalai
  * Author URI:        https://joe.szalai.org/
  * License:           GPL-2.0+
